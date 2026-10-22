@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="CSS\About_style.css" />
+    <link rel="stylesheet" href="CSS/About_style.css" />
   </head>
   <body>
-    <h4>Nuhaa.gpu</h4>
-    <nav>
-      <ul>
-        <li><a href="Index.html">Home</a></li>
-        <li>
-          <a href="Project.html">Projects</a>
-        </li>
-        <li><a href="About.html">About</a></li>
-      </ul>
-    </nav>
+    <header>
+      <h4>Nuhaa.gpu</h4>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li>
+            <a href="Project.html">Projects</a>
+          </li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <h1>About Me</h1>
-      <article id="about">
+      <article id="about-content">
         <p>
           creating a good website is a combination of art and science. It
           requires a deep understanding of user experience, design principles,
@@ -53,7 +55,48 @@
           that allows me to find inner peace and balance in my life.
         </p>
       </section>
-      <search id="contact">
+      <section class="experience">
+        <h2>My Experience</h2>
+        <div class="experience-item">
+          <h3>Backend Developer at XYZ Company</h3>
+          <p>
+            Worked on developing and maintaining backend systems for web
+            applications. Implemented RESTful APIs, optimized database queries,
+            and collaborated with frontend developers to ensure seamless
+            integration.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Software Engineer Intern at ABC Tech</h3>
+          <p>
+            Assisted in the development of a cloud-based application. Gained
+            experience in version control, code reviews, and agile development
+            practices.
+          </p>
+        </div>
+      </section>
+      <section id="education">
+        <h2>My Education</h2>
+        <div class="education-item">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p>University of Technology, 2020 - 2024</p>
+        </div>
+        <div class="education-item">
+          <h3>High School Diploma</h3>
+          <p>City High School, 2016 - 2020</p>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>Proficient in Python, JavaScript, and SQL</li>
+          <li>Experience with web frameworks such as Django and Flask</li>
+          <li>Strong understanding of data structures and algorithms</li>
+          <li>Familiarity with version control systems like Git</li>
+          <li>Excellent problem-solving and debugging skills</li>
+        </ul>
+      </section>
+      <section id="contact">
         <h2>Contact Me</h2>
         <form action="submit_form.php" method="post">
           <label for="name">Name:</label>
@@ -67,7 +110,7 @@
 
           <button type="submit">Send</button>
         </form>
-      </search>
+      </section>
     </main>
     <footer>
       <p>&copy; 2026 Nuhaa.gpu. All rights reserved.</p>

@@ -6,12 +6,23 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
 }
-body h4 {
-  color: #444;
+body header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header h4 {
+  color: #f4f4f4;
   margin-bottom: 10px;
 }
 nav {
@@ -39,6 +50,7 @@ nav ul li a:hover {
 }
 main {
   padding: 20px;
+  flex: 1;
 }
 main h3 {
   color: #333;
@@ -48,9 +60,7 @@ figure {
   flex: 1;
   display: flex;
   flex-direction: row;
-  align-items: right;
   justify-content: right;
-  shape-outside: circle();
 }
 figure img {
   width: 150px;
@@ -60,7 +70,7 @@ figure img {
   margin-left: 25px;
   margin-bottom: 10px;
 }
-figure figcaption .caption {
+figure figcaption.caption {
   text-align: center;
   font-style: italic;
   margin-top: 5px;
